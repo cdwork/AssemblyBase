@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\GHIElectronics.TinyCLR.Core.2.1.0-preview4\build\net452\GHIElectronics.TinyCLR.Core.props" Condition="Exists('..\packages\GHIElectronics.TinyCLR.Core.2.1.0-preview4\build\net452\GHIElectronics.TinyCLR.Core.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0163457-B472-477D-BEAA-CB6066D9426F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AssemblyBase</RootNamespace>
+    <AssemblyName>AssemblyBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ProjectTypeGuids>{A1948822-69DD-4150-919B-F3F42EFB71CC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assemblies\Assembly_0\Assembly_0.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000000}</Project>
+      <Name>Assembly_0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_10\Assembly_10.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000A}</Project>
+      <Name>Assembly_10</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_11\Assembly_11.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000B}</Project>
+      <Name>Assembly_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_12\Assembly_12.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000C}</Project>
+      <Name>Assembly_12</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_13\Assembly_13.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000D}</Project>
+      <Name>Assembly_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_14\Assembly_14.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000E}</Project>
+      <Name>Assembly_14</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_15\Assembly_15.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000000F}</Project>
+      <Name>Assembly_15</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_16\Assembly_16.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000010}</Project>
+      <Name>Assembly_16</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_17\Assembly_17.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000011}</Project>
+      <Name>Assembly_17</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_18\Assembly_18.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000012}</Project>
+      <Name>Assembly_18</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_19\Assembly_19.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000013}</Project>
+      <Name>Assembly_19</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_1\Assembly_1.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000001}</Project>
+      <Name>Assembly_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_20\Assembly_20.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000014}</Project>
+      <Name>Assembly_20</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_21\Assembly_21.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000015}</Project>
+      <Name>Assembly_21</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_22\Assembly_22.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000016}</Project>
+      <Name>Assembly_22</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_23\Assembly_23.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000017}</Project>
+      <Name>Assembly_23</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_24\Assembly_24.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000018}</Project>
+      <Name>Assembly_24</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_25\Assembly_25.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000019}</Project>
+      <Name>Assembly_25</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_26\Assembly_26.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001A}</Project>
+      <Name>Assembly_26</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_27\Assembly_27.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001B}</Project>
+      <Name>Assembly_27</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_28\Assembly_28.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001C}</Project>
+      <Name>Assembly_28</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_29\Assembly_29.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001D}</Project>
+      <Name>Assembly_29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_2\Assembly_2.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000002}</Project>
+      <Name>Assembly_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_30\Assembly_30.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001E}</Project>
+      <Name>Assembly_30</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_31\Assembly_31.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000001F}</Project>
+      <Name>Assembly_31</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_32\Assembly_32.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000020}</Project>
+      <Name>Assembly_32</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_33\Assembly_33.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000021}</Project>
+      <Name>Assembly_33</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_34\Assembly_34.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000022}</Project>
+      <Name>Assembly_34</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_35\Assembly_35.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000023}</Project>
+      <Name>Assembly_35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_36\Assembly_36.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000024}</Project>
+      <Name>Assembly_36</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_37\Assembly_37.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000025}</Project>
+      <Name>Assembly_37</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_38\Assembly_38.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000026}</Project>
+      <Name>Assembly_38</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_39\Assembly_39.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000027}</Project>
+      <Name>Assembly_39</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_3\Assembly_3.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000003}</Project>
+      <Name>Assembly_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_40\Assembly_40.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000028}</Project>
+      <Name>Assembly_40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_41\Assembly_41.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000029}</Project>
+      <Name>Assembly_41</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_42\Assembly_42.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002A}</Project>
+      <Name>Assembly_42</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_43\Assembly_43.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002B}</Project>
+      <Name>Assembly_43</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_44\Assembly_44.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002C}</Project>
+      <Name>Assembly_44</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_45\Assembly_45.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002D}</Project>
+      <Name>Assembly_45</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_46\Assembly_46.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002E}</Project>
+      <Name>Assembly_46</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_47\Assembly_47.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000002F}</Project>
+      <Name>Assembly_47</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_48\Assembly_48.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000030}</Project>
+      <Name>Assembly_48</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_49\Assembly_49.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000031}</Project>
+      <Name>Assembly_49</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_4\Assembly_4.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000004}</Project>
+      <Name>Assembly_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_50\Assembly_50.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000032}</Project>
+      <Name>Assembly_50</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_51\Assembly_51.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000033}</Project>
+      <Name>Assembly_51</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_52\Assembly_52.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000034}</Project>
+      <Name>Assembly_52</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_53\Assembly_53.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000035}</Project>
+      <Name>Assembly_53</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_54\Assembly_54.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000036}</Project>
+      <Name>Assembly_54</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_55\Assembly_55.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000037}</Project>
+      <Name>Assembly_55</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_56\Assembly_56.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000038}</Project>
+      <Name>Assembly_56</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_57\Assembly_57.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000039}</Project>
+      <Name>Assembly_57</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_58\Assembly_58.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003A}</Project>
+      <Name>Assembly_58</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_59\Assembly_59.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003B}</Project>
+      <Name>Assembly_59</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_5\Assembly_5.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000005}</Project>
+      <Name>Assembly_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_60\Assembly_60.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003C}</Project>
+      <Name>Assembly_60</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_61\Assembly_61.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003D}</Project>
+      <Name>Assembly_61</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_62\Assembly_62.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003E}</Project>
+      <Name>Assembly_62</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_63\Assembly_63.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-00000000003F}</Project>
+      <Name>Assembly_63</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_64\Assembly_64.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000040}</Project>
+      <Name>Assembly_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_65\Assembly_65.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000041}</Project>
+      <Name>Assembly_65</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_66\Assembly_66.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000042}</Project>
+      <Name>Assembly_66</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_67\Assembly_67.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000043}</Project>
+      <Name>Assembly_67</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_68\Assembly_68.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000044}</Project>
+      <Name>Assembly_68</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_69\Assembly_69.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000045}</Project>
+      <Name>Assembly_69</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_6\Assembly_6.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000006}</Project>
+      <Name>Assembly_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_7\Assembly_7.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000007}</Project>
+      <Name>Assembly_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_8\Assembly_8.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000008}</Project>
+      <Name>Assembly_8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Assembly_9\Assembly_9.csproj">
+      <Project>{489EC9D0-6234-43E2-9C2B-000000000009}</Project>
+      <Name>Assembly_9</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\GHIElectronics.TinyCLR.Core.2.1.0-preview4\build\net452\GHIElectronics.TinyCLR.Core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GHIElectronics.TinyCLR.Core.2.1.0-preview4\build\net452\GHIElectronics.TinyCLR.Core.props'))" />
+  </Target>
+</Project>
